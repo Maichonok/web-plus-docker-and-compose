@@ -21,7 +21,7 @@ import { AuthModule } from './auth/auth.module';
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
         port: configService.get('POSTGRES_PORT'),
-        schema: configService.get('POSTGRES_SCHEMA'),
+        // schema: configService.get('POSTGRES_SCHEMA'),
 
         host: configService.get('POSTGRES_HOST'),
         database: configService.get('POSTGRES_DB'),
